@@ -19,29 +19,7 @@ import java.util.*;
 
 import java.lang.Boolean;
 
-/**
- *
- * Predicts the sentiment of each tweet filtered by the keywords mentioned in selection.txt.
- * Sentiment is predicted based on comparing the words in a tweet with bag of negative and positive
- * words. The final sentiment (positive/negative) is assigned based on positive and negative scores
- * assigned to it. The results are written in hdfs in twitter_data/sentiment directory.
- *
- * Build instructions:
- *
- * cd TwitterSentimentSparkDemo
- * mvn package
- *
- * This will create target folder with compiled jar: TwitterSentimentAnalysis-0.0.1.jar.
- * Change directory to target to submit the job with following commands:
- *
- * spark-submit --class com.rackspace.spark.TwitterSentiment --master yarn-cluster --num-executors 2
- * --driver-memory 1g --executor-memory 1g --executor-cores 1 TwitterSentimentAnalysis-0.0.1.jar
- * consumerKey consumerSecret accessToken accessTokenSecret hdfs_output_path
- *
- * Notes:
- * hdfs_output_path should be of this format: hdfs://nodename/user/username
- *
- */
+
 
 public class TwitterSentiment {
 
